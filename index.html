@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI-Based Government Scheme Allocation</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-green-900 text-white p-4 flex justify-between items-center">
+<h1 class="text-xl font-bold">Smart AgriAI</h1>
+
+<button onclick="openLogin()"
+class="bg-white text-green-900 px-4 py-2 rounded-lg shadow">
+Farmer Login
+</button>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative h-[500px] bg-cover bg-center"
+style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');">
+
+<div class="absolute inset-0 bg-black/40"></div>
+
+<div class="relative z-10 flex flex-col justify-center h-full px-16 text-white">
+
+<h1 class="text-5xl font-bold mb-4">
+AI-Based Government Scheme Allocation
+</h1>
+
+<p class="text-lg mb-6">
+Fair, Transparent & Automated Farmer Scheme Distribution
+</p>
+
+<!-- Smaller Apply Button -->
+<button onclick="openLogin()"
+class="bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-base w-fit shadow-lg transition">
+Apply Now
+</button>
+
+</div>
+
+</section>
+
+<!-- Stats Section -->
+<section class="bg-green-900 text-white py-8">
+<div class="grid grid-cols-4 text-center">
+
+<div>
+<h2 class="text-3xl font-bold">10K+</h2>
+<p>Farmers Registered</p>
+</div>
+
+<div>
+<h2 class="text-3xl font-bold">200+</h2>
+<p>Schemes Distributed</p>
+</div>
+
+<div>
+<h2 class="text-3xl font-bold">50+</h2>
+<p>District Covered</p>
+</div>
+
+<div>
+<h2 class="text-3xl font-bold">AI Powered</h2>
+<p>Fair Allocation</p>
+</div>
+
+</div>
+</section>
+
+<!-- Features -->
+<section class="py-16 px-20 bg-white">
+
+<h2 class="text-3xl font-bold mb-10 text-center">
+Why This System Is Powerful
+</h2>
+
+<div class="grid grid-cols-3 gap-8">
+
+<div class="bg-gray-100 p-6 rounded shadow">
+<h3 class="font-bold text-xl mb-2">AI-Based Selection</h3>
+<p>Farmers ranked based on impact score.</p>
+</div>
+
+<div class="bg-gray-100 p-6 rounded shadow">
+<h3 class="font-bold text-xl mb-2">District Quota</h3>
+<p>Fair distribution across districts.</p>
+</div>
+
+<div class="bg-gray-100 p-6 rounded shadow">
+<h3 class="font-bold text-xl mb-2">Reservation Logic</h3>
+<p>SC/ST reservation supported.</p>
+</div>
+
+<div class="bg-gray-100 p-6 rounded shadow">
+<h3 class="font-bold text-xl mb-2">Waitlist Promotion</h3>
+<p>Automatic promotion of next farmer.</p>
+</div>
+
+<div class="bg-gray-100 p-6 rounded shadow">
+<h3 class="font-bold text-xl mb-2">Tamper Proof</h3>
+<p>Allocation runs only once.</p>
+</div>
+
+<div class="bg-gray-100 p-6 rounded shadow">
+<h3 class="font-bold text-xl mb-2">Transparent Audit</h3>
+<p>All actions are logged.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Login Modal -->
+<div id="loginModal"
+class="hidden fixed inset-0 bg-black/50 flex items-center justify-center">
+
+<div class="bg-white p-8 rounded-lg w-96">
+
+<h2 class="text-2xl font-bold mb-4">Farmer Login</h2>
+
+<input id="mobile"
+class="w-full border p-2 mb-4 rounded"
+placeholder="Enter Mobile Number">
+
+<button onclick="sendOTP()"
+class="bg-green-600 text-white w-full p-2 rounded">
+Send OTP
+</button>
+
+<div id="otpSection" class="hidden mt-4">
+
+<input id="otp"
+class="w-full border p-2 mb-4 rounded"
+placeholder="Enter OTP (1234)">
+
+<button onclick="verifyOTP()"
+class="bg-green-700 text-white w-full p-2 rounded">
+Login
+</button>
+
+</div>
+
+</div>
+</div>
+
+<script src="js/app.js"></script>
+
+<script>
+function openLogin(){
+document.getElementById("loginModal").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
